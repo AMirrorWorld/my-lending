@@ -1,17 +1,13 @@
-* {
+/* Общие стили */
+body, html {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Playfair Display', Baskerville, 'Lora', serif;
 }
 
-body {
-    font-family: 'Playfair Display', serif;
-    color: white;
-    background-color: #0d0d0d;
-    text-align: center;
-}
-
-.video-background video {
+video {
     position: absolute;
     top: 0;
     left: 0;
@@ -21,89 +17,16 @@ body {
     z-index: -1;
 }
 
+audio {
+    display: none;
+}
+
 .content {
-    padding: 20px;
-}
-
-h1 {
-    font-size: 3rem;
-    animation: fadeIn 2s ease-in-out;
-}
-
-h2 {
-    margin-top: 20px;
-    font-size: 2rem;
-}
-
-p {
-    font-size: 1.2rem;
-    margin: 10px 0;
-}
-
-.about img {
-    width: 300px;
-    margin-top: 20px;
-    border-radius: 10px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.about img:hover {
-    transform: scale(1.05);
-}
-
-.gallery {
-    margin-top: 50px;
-}
-
-.gallery-images img {
-    width: 20%;
-    margin: 10px;
-    border-radius: 10px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.gallery-images img:hover {
-    transform: scale(1.05);
-}
-
-footer {
-    margin-top: 30px;
-}
-
-footer a {
-    margin: 0 15px;
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.1rem;
-}
-
-footer a:hover {
-    color: #f39c12;
-}
-
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 2px solid #fff;
-    border-radius: 5px;
-}
-
-form button {
-    background-color: #f39c12;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
     color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-form button:hover {
-    background-color: #e67e22;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    font-size: 2rem;
 }
